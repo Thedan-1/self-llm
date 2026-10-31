@@ -1,0 +1,6 @@
+python tests/test_llama3_lora_loading.py -v
+3 tests passed
+python -m json.tool 'models/LLaMA3/LLaMA3-8B-Instruct Lora.ipynb'
+passed
+git diff --check
+passed
