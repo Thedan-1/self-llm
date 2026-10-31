@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><title>self-llm #450 encoding fallback proof</title>
+<style>body{font:18px system-ui;max-width:900px;margin:40px auto;color:#1f2937}pre{padding:16px;background:#111827;color:#e5e7eb;border-radius:8px}h1{font-size:26px}.ok{color:#087f5b;font-weight:700}</style>
+<h1>self-llm #450 · 中文文档编码回退实测</h1>
+<p>真实测试文件使用 GB18030 编码，模拟旧版 UTF-8-only 读取和修复后的读取路径。</p>
+<h2>修复前</h2><pre>UnicodeDecodeError: baseline UTF-8 read fails</pre>
+<h2>修复后</h2><pre class="ok">decoded 知识库.txt as gb18030: '价格说明\n仅支持中文文档。'</pre>
+<p class="ok">UTF-8 regression passed · Python compile passed</p>
