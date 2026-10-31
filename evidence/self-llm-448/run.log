@@ -1,0 +1,6 @@
+python tests/test_glm45_air_lora_loading.py -v
+3 tests passed
+python -m json.tool 'models/GLM-4.5-Air/03-GLM-4.5-Air-Lora 及 Swanlab 可视化微调.ipynb'
+passed
+git diff --check
+passed
